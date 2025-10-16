@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-header">
+        <figure class="avatar-container">
+          <img
+            src="me.png"
+            alt="Profile photo of Taiwo Afolabi, a Frontend Developer"
+            class="avatar"
+            data-testid="test-user-avatar"
+          />
+          <figcaption>An easy going guy 😊</figcaption>
+        </figure>
+
+        <div class="profile-info">
+          <h2 class="user-name" data-testid="test-user-name">
+            Taiwo G. Afolabi
+          </h2>
+          <p class="user-bio" data-testid="test-user-bio">
+            Frontend developer passionate about creating accessible and
+            beautiful websites for individuals and businesses. Loves drawing,
+            reading, and coding. Some of my tech stacks are HTML, CSS,
+            JavaScript, React, Nextjs and TailwindCSS.
+          </p>
+
+          <div class="time-container">
+            <span class="time-label">Current time (milliseconds):</span>
+            <span
+              class="user-time"
+              data-testid="test-user-time"
+              id="current-time"
+            ></span>
+          </div>
+        </div>
+      </header>
+
+      <nav class="social-links" data-testid="test-user-social-links">
+        <a
+          href="https://x.com/afolabi_ta578?t=9Wp2w1ISKya5NA8vsnPkmA&s=09"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          data-testid="test-user-social-twitter"
+        >
+          Twitter
+        </a>
+        <a
+          href="https://github.com/folabteegee"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          data-testid="test-user-social-github"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/taiwo-afolabi-b5b827227"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          data-testid="test-user-social-linkedin"
+        >
+          LinkedIn
+        </a>
+      </nav>
+
+      <div class="profile-details">
+        <section class="hobbies-section">
+          <h3 class="section-title">Hobbies</h3>
+          <ul class="hobbies-list" data-testid="test-user-hobbies">
+            <li class="hobby-item">Coding</li>
+            <li class="hobby-item">Drawing</li>
+            <li class="hobby-item">Reading</li>
+            <li class="hobby-item">Gaming</li>
+            <li class="hobby-item">Playing musics</li>
+          </ul>
+        </section>
+
+        <section class="dislikes-section">
+          <h3 class="section-title">Dislikes</h3>
+          <ul class="dislikes-list" data-testid="test-user-dislikes">
+            <li class="dislike-item">Loud Noises</li>
+            <li class="dislike-item">Overcrowded areas</li>
+            <li class="dislike-item">Dirtiness</li>
+            <li class="dislike-item">Laziness</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <!--  millisecond time   -->
+    <script>
+      function updateTime() {
+        const timeElement = document.getElementById("current-time");
+        timeElement.textContent = Date.now();
+      }
+
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
