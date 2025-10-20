@@ -41,7 +41,7 @@
 /* Responsive Navigation */
 @media (max-width: 768px) {
   .nav-list {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
     align-items: center;
   }
