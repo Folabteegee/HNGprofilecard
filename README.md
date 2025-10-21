@@ -5,7 +5,7 @@ A Profile card created by Taiwo Afolabi using semantic HTML, CSS and vanilla Jav
 Features used as specified are:
 Modern Frontend patterns
 Required Elements with data-testid: All elements have the exact data-testid attributes as specified
-Semantic HTML: Uses appropriate semantic tags like <article>, <header>, <figure>, <nav>, and <section>
+Semantic HTML: Uses appropriate semantic tags like article, header, figure, nav, and section
 Responsive Design:
    · Mobile: Stacked layout
    · Tablet/Desktop: Avatar on left, content on right
